@@ -1,0 +1,9 @@
+# robots.txt for JLIK Overseas Education
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://jlik-education.com/sitemap.xml
+
+# Crawl-delay (in seconds)
+Crawl-delay: 1

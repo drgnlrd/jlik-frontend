@@ -1,8 +1,11 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Fira+Sans:wght@400;500;600;700&display=swap');
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
   --font-size: 16px;
+  --font-body: 'Montserrat', sans-serif;
+  --font-heading: 'Fira Sans', sans-serif;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
@@ -127,16 +130,11 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-body, "Montserrat", sans-serif);
+    font-family: var(--font-body);
   }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-heading, "Fira Sans", sans-serif);
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
   }
 }
 
@@ -144,7 +142,7 @@
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
 @layer base {
-  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
     h1 {
       font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
@@ -201,7 +199,7 @@
   html {
     scroll-behavior: smooth;
   }
-
+  
   /* Reduced motion for accessibility */
   @media (prefers-reduced-motion: reduce) {
     *,
@@ -213,7 +211,7 @@
       scroll-behavior: auto !important;
     }
   }
-
+  
   /* Screen reader only class */
   .sr-only {
     position: absolute;
@@ -226,18 +224,18 @@
     white-space: nowrap;
     border-width: 0;
   }
-
+  
   /* Focus visible enhancement */
   .focus-visible:focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 2px;
   }
-
+  
   /* Image loading optimization */
   img {
     content-visibility: auto;
   }
-
+  
   /* Hardware acceleration for animations */
   .hw-accelerate {
     transform: translateZ(0);
