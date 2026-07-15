@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
@@ -36,31 +36,38 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      content: "info@edupath.com",
-      link: "mailto:info@edupath.com",
+      content: "info@jlikoverseaseducation.com",
+      link: "mailto:info@jlikoverseaseducation.com",
     },
     {
       icon: Phone,
-      title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      title: "Phone 1",
+      content: `9573911611`,
+      link: "tel:+919573911611",
+    },
+    {
+      icon: Phone,
+      title: "Phone 2",
+      content: `7329042008`,
+      link: "tel:+917329042008",
     },
     {
       icon: MapPin,
       title: "Office",
-      content: "123 Education Plaza, Suite 456, New York, NY 10001",
+      content:
+        "Flat 106, 1st Floor, Amsri Plaza, Sarojini Devi Road, Secunderabad, 500003",
     },
-    {
-      icon: Clock,
-      title: "Hours",
-      content: "Mon - Sat: 9:00 AM - 7:00 PM",
-    },
+    // {
+    //   icon: Clock,
+    //   title: "Hours",
+    //   content: "Mon - Sat: 9:00 AM - 7:00 PM",
+    // },
   ];
 
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary/5 to-accent/20">
+      <section className="relative py-20 bg-linear-to-br from-primary/5 to-accent/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -232,7 +239,7 @@ export function Contact() {
                         transition={{ delay: index * 0.1 }}
                         className="flex items-start gap-3"
                       >
-                        <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                           <div className="w-2 h-2 rounded-full bg-primary" />
                         </div>
                         <span className="text-muted-foreground">{item}</span>

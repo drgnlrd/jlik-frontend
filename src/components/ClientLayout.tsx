@@ -146,7 +146,7 @@ export function ClientLayout({
 
               {/* Phone Number */}
               <motion.a
-                href="tel:+15551234567"
+                href="tel:+919573911611"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ export function ClientLayout({
                 >
                   <Phone className="w-4 h-4" />
                 </motion.div>
-                <span className="hidden lg:inline">+1 (555) 123-4567</span>
+                <span className="hidden lg:inline">+919573911611</span>
               </motion.a>
 
               {/* Social Media Icons */}
@@ -494,7 +494,7 @@ export function ClientLayout({
                   className="flex items-start gap-2"
                 >
                   <span className="text-primary mt-0.5">📞</span>
-                  <span>+1 (555) 123-4567</span>
+                  <span>+919573911611</span>
                 </motion.li>
                 <motion.li
                   whileHover={{ x: 5 }}
